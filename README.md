@@ -1,5 +1,7 @@
 # OneButton
 
+OneButton is a one-click solution for ipa to finish all hackathon duties at once. Some features are mentioned in [hackpad]( https://g0v.hackpad.com/%25E7%25AC%25AC%25E5%25A3%25B9%25E6%25AC%25A1%25E5%259F%25BA%25E7%25A4%258E%25E6%259D%25BE#-2016612).
+
 * `brew install phantomjs`
 * `npm install -g casperjs`
 * update config.js
