@@ -1,0 +1,25 @@
+{
+  "name": "onebutton",
+  "version": "1.0.0",
+  "description": "OneButton is a one-click solution for ipa to finish all hackathon duties at once.",
+  "main": "js/input.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/g0v/OneButton.git"
+  },
+  "author": "g0v",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/g0v/OneButton/issues"
+  },
+  "homepage": "https://github.com/g0v/OneButton#readme",
+  "dependencies": {
+    "phantomjs": "^2.1.1",
+    "casperjs": "^1.1.1",
+    "moment-natural": "^0.0.2",
+    "inquirer": "^1.0.3"
+  }
+}
