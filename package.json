@@ -17,9 +17,10 @@
   },
   "homepage": "https://github.com/g0v/OneButton#readme",
   "dependencies": {
-    "phantomjs": "^2.1.1",
     "casperjs": "^1.1.1",
+    "cheerio": "^0.20.0",
+    "inquirer": "^1.0.3",
     "moment-natural": "^0.0.2",
-    "inquirer": "^1.0.3"
+    "phantomjs": "^2.1.1"
   }
 }

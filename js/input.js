@@ -68,14 +68,24 @@ inquirer.prompt(questions).then(function (answers) {
   var slug = "g0v-hackath" + answers.times + "n";
   console.log('開始...');
   console.log('--------');
+
   console.log('建立 KKTIX 活動...');
   var cmd = 'casperjs --ignore-ssl-errors=yes --ssl-protocol=tlsv1 --slug="' + slug + '" --name="' + answers.name + '" --start_at="' + answers.start_at + '" --end_at="' + answers.end_at + '" js/kktix.js';
-  exec(cmd);
-  console.log('建完活動啦... https://kktix.com/dashboard/events/' + slug);
-  console.log('--------');
+
+  exec(cmd, function(err, stdout, stderr) {
+    console.log('建完活動啦... https://kktix.com/dashboard/events/' + slug);
+    console.log('--------');
+  });
+
   console.log('建立 hackpad...');
-  console.log('建完 hackpad 啦... URL');
-  console.log('--------');
+  var cmd = 'node js/hackpad.js ' + answers.times + ' ' + answers.name + ' ' + answers.start_at + ' ' + answers.end_at;
+
+  exec(cmd, function(err, stdout, stderr) {
+    var padID = stdout.split('\n').slice(-2)[0];
+    console.log('建完 hackpad 啦... https://g0v.hackpad.com/' + padID);
+    console.log('--------');
+  });
+
   console.log('建立 Google Spreadsheet...');
   console.log('建完 Spreadsheet 啦... URL');
 });
