@@ -1,4 +1,9 @@
 var inquirer = require('inquirer');
+var moment = require('moment-natural');
+
+/* next Saturday */
+var default_begin_date = moment.natural('09:00 next saturday').format('YYYY/MM/DD HH:mm');
+var default_end_date = moment.natural('18:00 next saturday').format('YYYY/MM/DD HH:mm');
 
 var questions = [
   {
@@ -19,7 +24,7 @@ var questions = [
     name: 'begin_at',
     message: '開始時間',
     default: function () {
-      return '2032/12/27 09:00';
+      return default_begin_date;
     },
     validate: function (value) {
       var pass = value.match(/(\d{4}\/\d{2}\/\d{2} \d{2}:\d{2})/);
@@ -34,7 +39,7 @@ var questions = [
     name: 'end_at',
     message: '結束時間',
     default: function () {
-      return '2032/12/27 18:00';
+      return default_end_date;
     },
     validate: function (value) {
       var pass = value.match(/(\d{4}\/\d{2}\/\d{2} \d{2}:\d{2})/);
@@ -47,6 +52,15 @@ var questions = [
 ];
 
 inquirer.prompt(questions).then(function (answers) {
-  console.log('開始...')
+  console.log('開始...');
+  console.log('--------');
+  console.log('建立 KKTIX 活動...');
+  console.log('建完活動也發佈啦... URL');
+  console.log('--------');
+  console.log('建立 hackpad...');
+  console.log('建完 hackpad 啦... URL');
+  console.log('--------');
+  console.log('建立 Google Spreadsheet...');
+  console.log('建完 Spreadsheet 啦... URL');
   console.log(JSON.stringify(answers, null, '  '));
 });
