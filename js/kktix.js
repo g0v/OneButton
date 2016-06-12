@@ -33,8 +33,8 @@ casper.waitForSelector('#nav-user-display-id', function() {
   this.echo("Your name is " + user);
 });
 
-/* go to create event */
-casper.thenOpen('https://kktix.com/dashboard/organizations/g0v-tw/events/new', function() {
+/* go to create event and fork from hackathon19 */
+casper.thenOpen('https://kktix.com/dashboard/organizations/g0v-jothon/events/new?fork_from=g0v-hackath19n', function() {
   var slug = this.evaluate(function(){
     return document.querySelector('#event_slug').value;
   });
