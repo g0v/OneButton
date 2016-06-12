@@ -1,9 +1,4 @@
 var debug = false;
-var KKTIX = {
-  user: '',
-  password: ''
-};
-
 if (debug) {
   options = {
     verbose: true,
@@ -13,6 +8,7 @@ if (debug) {
   options = {};
 }
 
+var config = require('../config');
 var casper = require('casper').create(options);
 
 /* login */
