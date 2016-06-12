@@ -1,6 +1,5 @@
-$('document').ready(function() {
-	var options = { videoId: 'mSaKTmpzV-0', start: 3 };
-	$('#wrapper').tubular(options);
-	// f-UGhWj1xww cool sepia hd
-	// 49SKbS7Xwf4 beautiful barn sepia
+$(document).ready(function() {
+	$('#go').click(function() {
+		$('#tube iframe').attr('src', 'https://youtube.com/embed/mSaKTmpzV-0?autoplay=1&controls=0&showinfo=0&autohide=1&loop=1');
+	});
 });
