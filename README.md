@@ -11,3 +11,10 @@ You can fork and create event manually now:
 *  `casperjs --ignore-ssl-errors=yes --ssl-protocol=tlsv1 --slug="EVENT_SLUG" --name="EVENT_NAME" --start_at="2016/06/24 09:00" --end_at="2016/06/24 18:00" js/kktix.js`
 
 Or run `node js/input.js` to create event in CUI.
+
+
+## Contributors
+
+* ipa & ttcat (https://github.com/ttcat) for feature planning.
+* hlb (https://github.com/hlb) for project structure.
+* Lee (https://github.com/jessy1092) for hackpad and hackfolder integration.
