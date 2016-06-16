@@ -34,7 +34,6 @@ casper.thenOpen('https://kktix.com/dashboard/organizations/' + config.KKTIX.orga
   this.fill('form#new-event', {
     'event[name]': casper.cli.get("name"),
     'event[slug]': casper.cli.get("slug"),
-    'event[capacity]': 100,
     'event[start_at]': casper.cli.get("start_at"),
     'event[end_at]': casper.cli.get("end_at")
   }, true);
