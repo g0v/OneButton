@@ -1,11 +1,15 @@
 var config = require('../config');
 var inquirer = require('inquirer');
 var moment = require('moment-natural');
+var hackfoldr = require('./hackfoldr');
 var exec = require('child_process').exec;
 
 /* next Saturday */
-var default_start_at = moment.natural('09:00 next saturday').format('YYYY/MM/DD HH:mm');
+var default_start_moment = moment.natural('09:00 next saturday');
+var default_start_at = default_start_moment.format('YYYY/MM/DD HH:mm');
 var default_end_at = moment.natural('18:00 next saturday').format('YYYY/MM/DD HH:mm');
+/* 12 days before start date(? */
+var default_signup_at = default_start_moment.subtract(12, 'days').add(3, 'hours').format('MM/DD');
 
 var isNumeric = function(n) {
   return !isNaN(parseFloat(n)) && isFinite(n);
@@ -61,6 +65,21 @@ var questions = [
       }
       return '時間格式錯啦！';
     }
+  },
+  {
+    type: 'input',
+    name: 'signup_at',
+    message: '註冊時間',
+    default: function() {
+      return default_signup_at;
+    },
+    validate: function(value) {
+      var pass = value.match(/(\d{2}\/\d{2})/);
+      if (pass) {
+        return true;
+      }
+      return '時間格式錯啦！';
+    }
   }
 ];
 
@@ -85,6 +104,11 @@ inquirer.prompt(questions).then(function (answers) {
     console.log('建完 hackpad 啦... https://g0v.hackpad.com/' + padID);
     console.log('--------');
   });
+
+  console.log('建立 hackfoldr...')
+  hackfoldr(answers.times, answers.name, answers.start_at, answers.signup_at)
+    .then(function(sheetID) { console.log('建完 hackfoldr 啦... https://ethercalc.org' + sheetID) })
+    .catch(console.error.bind(console));
 
   console.log('建立 Google Spreadsheet...');
   console.log('建完 Spreadsheet 啦... URL');

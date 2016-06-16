@@ -20,8 +20,12 @@
     "casperjs": "^1.1.1",
     "cheerio": "^0.20.0",
     "hackpad": "jessy1092/node-hackpad#master",
+    "es6-promise": "^3.2.1",
+    "http-client": "^4.0.1",
     "inquirer": "^1.0.3",
+    "isomorphic-fetch": "^2.2.1",
     "moment-natural": "^0.0.2",
-    "phantomjs": "^2.1.1"
+    "phantomjs": "^2.1.1",
+    "ramda": "^0.21.0"
   }
 }
