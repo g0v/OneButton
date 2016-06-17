@@ -22,6 +22,16 @@ client.export('2ucl5ftrzot', 'latest', 'html', function(err, resp) {
   // Set hackathon title
   $('h1').text('hackath' + padNum + 'n - '+ padName);
 
+  // Set hackfoldr path
+  // console.log($('p').eq(0).html());
+  $('p').eq(0).html('<b>本次大松 hackfoldr：<a href="http://beta.hackfoldr.org/g0v-hackath' + padNum + ' n">http://beta.hackfoldr.org/g0v-hackath' + padNum + 'n</a></b>');
+
+  $('p').each(function(i, el) {
+    if ($(el).text() === 'hackfoldr：&nbsp;') {
+      $(el).html('hackfoldr: <a href="http://beta.hackfoldr.org/g0v-hackath' + padNum + ' n">http://beta.hackfoldr.org/g0v-hackath' + padNum + 'n</a>');
+    }
+  })
+
   // Set hackathon time
   $('h2').each(function(i, el) {
     if ($(el).text() === '活動資訊') {
