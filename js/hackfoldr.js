@@ -32,7 +32,7 @@ function fixContentLength() {
   }
 }
 
-function run(times, name, begin_at, signup_at, spreadsheet_link) {
+function run(times, name, padID, begin_at, signup_at, spreadsheet_link) {
   times = times || 0;
   name = name || '第零次動員戡亂黑客松';
   begin_at = begin_at || '2012/12/01 09:00';
@@ -43,6 +43,8 @@ function run(times, name, begin_at, signup_at, spreadsheet_link) {
   var template = fs.readFileSync(templatePath).toString();
   var snapshot = genSnapshot(template, {
     name: name,
+    times: times,
+    padID: padID,
     begin_at: begin_at,
     signup_at: signup_at,
     spreadsheet_link: spreadsheet_link
@@ -64,9 +66,9 @@ function run(times, name, begin_at, signup_at, spreadsheet_link) {
 
 if (runningAsScript) {
   var argv = process.argv;
-  if (argv.length !== 6 && argv.length !== 7) {
+  if (argv.length !== 7 && argv.length !== 8) {
     // ./hackfoldr.js 321 第三二一次謝頓危機松 2077/10/23+09:00 10/11
-    console.log('./hackfoldr.js <times> <name> <begin_at YYYY/MM/DD+HH:mm> <signup_at MM/DD> [spreadsheet_link]');
+    console.log('./hackfoldr.js <times> <name> <hackpad ID> <begin_at YYYY/MM/DD+HH:mm> <signup_at MM/DD> [spreadsheet_link]');
     process.exit(-1);
   }
   run(+argv[2], argv[3], argv[4].replace(/\+/g, ' '), argv[5].replace(/\+/g, ' '), argv[6])

@@ -22,12 +22,12 @@ cell:A2:vtc:::
 cell:B2:t:g0v${name}共筆
 cell:C2:vtc:::
 cell:D2:vtc:::
-cell:A4:t:https\c//g0v.hackpad.com/hackath19n--yhTSPTHQ8H7
+cell:A4:t:https\c//g0v.hackpad.com/${padID}
 cell:B4:t:${begin_at} 活動資訊
 cell:C4:vtc:::
 cell:D4:t:行前準備\cimportant
 cell:F4:t:done
-cell:A5:vt:tl:http\c//g0v-jothon.kktix.cc/events/g0v-hackath19n
+cell:A5:vt:tl:http\c//g0v-jothon.kktix.cc/events/g0v-hackath${times}n
 cell:B5:t:報名網址
 cell:C5:vtc:::
 cell:D5:t:${signup_at} 正午開始\cwarning
