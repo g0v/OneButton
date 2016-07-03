@@ -1,4 +1,7 @@
 var fs = require('fs');
+var config = require('../config');
+require('isomorphic-fetch');
+var httpClient = require('http-client');
 var readline = require('readline');
 var google = require('googleapis');
 var googleAuth = require('google-auth-library');
@@ -81,7 +84,21 @@ function copyFile(auth) {
     if (err) {
       console.log(err)
     } else {
-      console.log("https://docs.google.com/spreadsheets/d/" + response.id)
+      var spreadsheet_url = "https://docs.google.com/spreadsheets/d/" + response.id
+      var createShorten = httpClient.createFetch(
+        httpClient.base('https://api-ssl.bitly.com/v3'),
+        httpClient.parseJSON()
+      )
+
+      var promoise = createShorten('/shorten?access_token=' + config.BITLY.access_token + '&longUrl=' + spreadsheet_url)
+        .then(function(resp){
+          var ret = resp.jsonData
+          if (ret.status_code != 200) {
+              console.log(ret.status_txt);
+          } else {
+              console.log(ret.data.url);
+          }
+      });
     }
   });
 }

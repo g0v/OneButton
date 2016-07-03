@@ -115,6 +115,4 @@ inquirer.prompt(questions).then(function (answers) {
   exec(cmd, function(err, stdout, stderr) {
     var spreadsheetUrl = stdout.split("\n")[0];
     console.log('建完 Spreadsheet 啦... ' + spreadsheetUrl);
-    console.log('--------');
-  })
 });

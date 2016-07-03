@@ -8,5 +8,8 @@ module.exports = {
   HACKPAD: {
     client_id: '',
     secret: ''
+  },
+  BITLY:{
+    "access_token": ""
   }
 };
