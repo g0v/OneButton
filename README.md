@@ -5,6 +5,7 @@ OneButton is a one-click solution for ipa to finish all hackathon duties at once
 * `brew install phantomjs`
 * `npm install -g casperjs`
 * update config.js (Need kktix's account, password and hackpad's id, secret)
+* (each hackpad subdomain has differnet hackpad id, secret)
 
 You can fork and create event manually now:
 
