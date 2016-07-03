@@ -110,8 +110,9 @@ inquirer.prompt(questions).then(function (answers) {
         .catch(console.error.bind(console));
 
   });
-
-  
   console.log('建立 Google Spreadsheet...');
-  console.log('建完 Spreadsheet 啦... URL');
+  var cmd = 'node js/spreadsheet.js ' + answers.times + ' ' + answers.name;
+  exec(cmd, function(err, stdout, stderr) {
+    var spreadsheetUrl = stdout.split("\n")[0];
+    console.log('建完 Spreadsheet 啦... ' + spreadsheetUrl);
 });
