@@ -6,8 +6,9 @@ OneButton is a one-click solution for ipa to finish all hackathon duties at once
 
 * `brew install phantomjs`
 * `npm install -g casperjs`
+* `npm i`
 * Update **config.js**
-  * kktix's account, password 
+  * kktix's account, password
   * hackpad's id, secret (each hackpad subdomain has differnet hackpad id, secret)
   * bit.ly's access token
 
@@ -22,17 +23,26 @@ $ node js/gapi-gen-token.js
 
 ## Run
 
+#### Run whole function
+
+Run `node js/input.js` to create event in CUI.
+
+#### Run part of function
+
 You can fork and create event manually now:
 *  `casperjs --ignore-ssl-errors=yes --ssl-protocol=tlsv1 --slug="EVENT_SLUG" --name="EVENT_NAME" --start_at="2016/06/24 09:00" --end_at="2016/06/24 18:00" js/kktix.js`
 
 To create an event spreadsheet manually:
 * `node js/spreadsheet.js EVENT_NUMBER EVENT_NAME`
 
-Or run `node js/input.js` to create event in CUI.
+To create an event hackpad manually:
+* `node js/hackpad.js EVENT_NUMBER EVENT_NAME EVENT_START_TIME EVENT_END_TIME`
+
 
 ## Contributors
 
 * ipa (https://github.com/ipaaa) & ttcat (https://github.com/ttcat) for feature planning.
 * hlb (https://github.com/hlb) for project structure.
-* Lee (https://github.com/jessy1092) for hackpad and hackfolder integration.
+* Lee (https://github.com/jessy1092) for hackpad integration.
+* cassi (https://github.com/caasi) for hackfolder integration.
 * Jim (https://github.com/lemonlatte) for google spreadsheet creation
