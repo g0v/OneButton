@@ -31,8 +31,11 @@ casper.waitForSelector('#nav-user-display-id', function() {
 
 /* fork event from template */
 casper.thenOpen('https://kktix.com/dashboard/organizations/' + config.KKTIX.organization + '/events/new?fork_from=' + config.KKTIX.template, function() {
+
+  var name = casper.cli.get("slug").replace('-', ' ') + ' | 台灣零時政府' + casper.cli.get("name");
+
   this.fill('form#new-event', {
-    'event[name]': casper.cli.get("name"),
+    'event[name]': name,
     'event[slug]': casper.cli.get("slug"),
     'event[start_at]': casper.cli.get("start_at"),
     'event[end_at]': casper.cli.get("end_at")
