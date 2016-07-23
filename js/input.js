@@ -113,7 +113,7 @@ inquirer.prompt(questions).then(function (answers) {
 
       console.log('建立 hackfoldr...')
       hackfoldr(answers.times, answers.name, padID, answers.start_at, answers.signup_at, spreadsheetUrl)
-        .then(function(sheetID) { console.log('建完 hackfoldr 啦... https://ethercalc.org' + sheetID) })
+        .then(function(sheetID) { console.log('建完 hackfoldr 啦... https://beta.hackfoldr.org' + sheetID) })
         .catch(console.error.bind(console));
     });
   });
