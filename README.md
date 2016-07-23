@@ -32,7 +32,7 @@ Or run `node js/input.js` to create event in CUI.
 
 ## Contributors
 
-* ipa & ttcat (https://github.com/ttcat) for feature planning.
+* ipa (https://github.com/ipaaa) & ttcat (https://github.com/ttcat) for feature planning.
 * hlb (https://github.com/hlb) for project structure.
 * Lee (https://github.com/jessy1092) for hackpad and hackfolder integration.
 * Jim (https://github.com/lemonlatte) for google spreadsheet creation
