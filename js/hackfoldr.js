@@ -71,7 +71,7 @@ if (runningAsScript) {
     console.log('./hackfoldr.js <times> <name> <hackpad ID> <begin_at YYYY/MM/DD+HH:mm> <signup_at MM/DD> [spreadsheet_link]');
     process.exit(-1);
   }
-  run(+argv[2], argv[3], argv[4].replace(/\+/g, ' '), argv[5].replace(/\+/g, ' '), argv[6])
+  run(+argv[2], argv[3], argv[4].replace(/\+/g, ' '), argv[5].replace(/\+/g, ' '), argv[6], argv[7])
     .then(console.log.bind('https://ethercalc.org' + console))
     .catch(console.error.bind(console));
 } else {

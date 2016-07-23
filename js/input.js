@@ -104,15 +104,17 @@ inquirer.prompt(questions).then(function (answers) {
     console.log('建完 hackpad 啦... https://g0v.hackpad.com/' + padID);
     console.log('--------');
 
-    console.log('建立 hackfoldr...')
-      hackfoldr(answers.times, answers.name, padID, answers.start_at, answers.signup_at)
+    console.log('建立 Google Spreadsheet...');
+    var cmd = 'node js/spreadsheet.js ' + answers.times + ' ' + answers.name;
+    exec(cmd, function(err, stdout, stderr) {
+      var spreadsheetUrl = stdout.split("\n")[0];
+      console.log('建完 Spreadsheet 啦... ' + spreadsheetUrl);
+
+
+      console.log('建立 hackfoldr...')
+      hackfoldr(answers.times, answers.name, padID, answers.start_at, answers.signup_at, spreadsheetUrl)
         .then(function(sheetID) { console.log('建完 hackfoldr 啦... https://ethercalc.org' + sheetID) })
         .catch(console.error.bind(console));
-
+    });
   });
-  console.log('建立 Google Spreadsheet...');
-  var cmd = 'node js/spreadsheet.js ' + answers.times + ' ' + answers.name;
-  exec(cmd, function(err, stdout, stderr) {
-    var spreadsheetUrl = stdout.split("\n")[0];
-    console.log('建完 Spreadsheet 啦... ' + spreadsheetUrl);
 });
