@@ -38,3 +38,6 @@ jspm_packages
 
 # Ignore the config
 config.js
+
+.gapi-token.json
+client_secret.json
