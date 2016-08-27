@@ -15,5 +15,8 @@ module.exports = {
   },
   BITLY:{
     "access_token": ""
+  },
+  TYPEFORM:{
+    "api_key": ""
   }
 };
