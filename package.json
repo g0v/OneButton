@@ -23,7 +23,7 @@
     "google-auth-library": "^0.9.8",
     "googleapis": "^12.0.0",
     "hackpad": "jessy1092/node-hackpad#master",
-    "http-client": "^4.0.1",
+    "http-client": "^4.1.0",
     "inquirer": "^1.0.3",
     "isomorphic-fetch": "^2.2.1",
     "moment-natural": "^0.0.2",
