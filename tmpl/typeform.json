@@ -80,7 +80,7 @@
       "description": "Do you like the food?",
       "required": true,
       "steps": 5,
-      "shape": "thumbs_up"
+      "shape": "up"
     },
     {
       "type": "opinion_scale",
