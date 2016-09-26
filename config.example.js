@@ -17,6 +17,7 @@ module.exports = {
     "access_token": ""
   },
   TYPEFORM:{
-    "api_key": ""
+    "api_key": "",
+    "webhook_submit_url": ""
   }
 };

@@ -17,6 +17,7 @@ var fs = require('fs');
 var path = require('path');
 var config = require('../config');
 var apiKey = config.TYPEFORM.api_key;
+var webhookSubmitUrl = config.TYPEFORM.webhook_submit_url;
 
 function genSnapshot(template, obj) {
   return reduce(function(acc, pair) {
@@ -36,6 +37,7 @@ function genSnapshot(template, obj) {
 function run() {
   var templatePath = path.join(__dirname, '../tmpl/typeform.json');
   var template = JSON.parse(fs.readFileSync(templatePath).toString());
+  template.webhook_submit_url = webhookSubmitUrl;
 
   var createForm = createFetch(
     base('https://api.typeform.io/v0.4/forms'),
@@ -47,11 +49,17 @@ function run() {
 
   var promise = createForm()
     .then(function(resp) {
-      return {
-        id: resp.jsonData.id,
-        _links: resp.jsonData._links
-      };
+      return resp.jsonData;
+    })
+    .then(function(jsonData) {
+      return createFetch(
+        base(webhookSubmitUrl),
+        json(jsonData),
+        method('PUT')
+      )()
+        .then(function() { return jsonData });
     });
+
   return promise;
 }
 
