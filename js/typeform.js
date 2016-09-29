@@ -19,17 +19,8 @@ var config = require('../config');
 var apiKey = config.TYPEFORM.api_key;
 var webhookSubmitUrl = config.TYPEFORM.webhook_submit_url;
 
-function genSnapshot(template, obj) {
-  return reduce(function(acc, pair) {
-    var key = pair[0];
-    var value = (pair[1] + '').replace(/:/g, '\\c');
-    var regexp = new RegExp('\\$\{' + key + '\}', 'g');
-    return acc.replace(regexp, value);
-  }, template, toPairs(obj));
-}
-
 /**
- * XXX: about shape in rating question
+ * XXX: about the shape field in rating question
  * shape must be one of the following: "star", "heart", "user", "up", "crown",
  * "cat", "dog", "circle", "flag", "droplet", "tick", "lightbulb", "trophy",
  * "cloud", "thunderbolt", "pencil", "skull"
@@ -52,12 +43,13 @@ function run() {
       return resp.jsonData;
     })
     .then(function(jsonData) {
+      // register this form to the callback webhook
       return createFetch(
         base(webhookSubmitUrl),
         json(jsonData),
         method('PUT')
       )()
-        .then(function() { return jsonData });
+        .then(function() { return jsonData._links[1].href });
     });
 
   return promise;
@@ -66,8 +58,7 @@ function run() {
 if (runningAsScript) {
   var argv = process.argv;
   if (argv.length !== 2) {
-    // ./hackfoldr.js 321 第三二一次謝頓危機松 2077/10/23+09:00 10/11
-    console.log('./typeform.js <times> <name> <hackpad ID> <begin_at YYYY/MM/DD+HH:mm> <signup_at MM/DD> [spreadsheet_link]');
+    console.log('usage: ./typeform.js');
     process.exit(-1);
   }
   run()

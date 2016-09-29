@@ -2,6 +2,7 @@ var config = require('../config');
 var inquirer = require('inquirer');
 var moment = require('moment-natural');
 var hackfoldr = require('./hackfoldr');
+var typeform = require('./typeform');
 var exec = require('child_process').exec;
 
 /* next Saturday */
@@ -114,6 +115,11 @@ inquirer.prompt(questions).then(function (answers) {
       console.log('建立 hackfoldr...')
       hackfoldr(answers.times, answers.name, padID, answers.start_at, answers.signup_at, spreadsheetUrl)
         .then(function(sheetID) { console.log('建完 hackfoldr 啦... https://beta.hackfoldr.org' + sheetID) })
+        .catch(console.error.bind(console));
+
+      console.log('建立會後問券...')
+      typeform()
+        .then(function(url) { console.log('建完會後問券啦... ' + url) })
         .catch(console.error.bind(console));
     });
   });
