@@ -119,7 +119,7 @@ inquirer.prompt(questions).then(function (answers) {
 
       console.log('建立會後問券...')
       typeform(answers.name)
-        .then(function(url) { console.log('建完會後問券啦... ' + url) })
+        .then(function(result) { console.log('建完會後問券啦... ' + result.links[1].href + ', id: ' + result.id) })
         .catch(console.error.bind(console));
     });
   });

@@ -45,13 +45,16 @@ function run(name) {
       return resp.jsonData;
     })
     .then(function(jsonData) {
+      var id = jsonData.id;
+      var links = jsonData._links;
+
       // register this form to the callback webhook
       return createFetch(
         base(webhookSubmitUrl),
         json(jsonData),
         method('PUT')
       )()
-        .then(function() { return jsonData._links[1].href });
+        .then(function() { return { id: id, links: links } });
     });
 
   return promise;
