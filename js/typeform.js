@@ -3,6 +3,9 @@ var runningAsScript = !module.parent;
 
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
+
+var template = require('../tmpl/typeform');
+
 var httpClient = require('http-client');
 var base = httpClient.base;
 var json = httpClient.json;
@@ -25,15 +28,14 @@ var webhookSubmitUrl = config.TYPEFORM.webhook_submit_url;
  * "cat", "dog", "circle", "flag", "droplet", "tick", "lightbulb", "trophy",
  * "cloud", "thunderbolt", "pencil", "skull"
  */
-function run() {
-  var templatePath = path.join(__dirname, '../tmpl/typeform.json');
-  var template = JSON.parse(fs.readFileSync(templatePath).toString());
-  template.webhook_submit_url = webhookSubmitUrl;
+function run(name) {
+  var tmpl = template({ name: name });
+  tmpl.webhook_submit_url = webhookSubmitUrl;
 
   var createForm = createFetch(
     base('https://api.typeform.io/v0.4/forms'),
     header('X-API-TOKEN', apiKey),
-    json(template),
+    json(tmpl),
     method('POST'),
     parseJSON()
   );
@@ -57,11 +59,11 @@ function run() {
 
 if (runningAsScript) {
   var argv = process.argv;
-  if (argv.length !== 2) {
-    console.log('usage: ./typeform.js');
+  if (argv.length !== 3) {
+    console.log('usage: ./typeform.js <name>');
     process.exit(-1);
   }
-  run()
+  run(argv[2])
     .then(console.log.bind(console))
     .catch(console.error.bind(console));
 } else {

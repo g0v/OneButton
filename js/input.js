@@ -118,7 +118,7 @@ inquirer.prompt(questions).then(function (answers) {
         .catch(console.error.bind(console));
 
       console.log('建立會後問券...')
-      typeform()
+      typeform(answers.name)
         .then(function(url) { console.log('建完會後問券啦... ' + url) })
         .catch(console.error.bind(console));
     });
