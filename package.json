@@ -4,6 +4,7 @@
   "description": "OneButton is a one-click solution for ipa to finish all hackathon duties at once.",
   "main": "js/input.js",
   "scripts": {
+    "start": "cross-env NODE_ENV=development webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +20,7 @@
   "dependencies": {
     "casperjs": "^1.1.1",
     "cheerio": "^0.20.0",
+    "classnames": "^2.2.5",
     "es6-promise": "^3.2.1",
     "google-auth-library": "^0.9.8",
     "googleapis": "^12.0.0",
@@ -28,6 +30,28 @@
     "isomorphic-fetch": "^2.2.1",
     "moment-natural": "^0.0.2",
     "phantomjs": "^2.1.1",
-    "ramda": "^0.21.0"
+    "ramda": "^0.21.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.6",
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-1": "^6.22.0",
+    "cross-env": "^3.1.4",
+    "css-loader": "^0.26.2",
+    "file-loader": "^0.10.1",
+    "postcss": "^5.2.15",
+    "postcss-loader": "^1.3.3",
+    "postcss-scss": "^0.4.1",
+    "precss": "^1.4.0",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "style-loader": "^0.13.2",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
   }
 }
