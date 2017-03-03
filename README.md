@@ -23,6 +23,10 @@ $ node js/gapi-gen-token.js
 
 ## Run
 
+#### See the GUI in development
+
+Run `npm start` and visit `http://localhost:3000/`.
+
 #### Run whole function
 
 Run `node js/input.js` to create event in CUI.
@@ -38,11 +42,18 @@ To create an event spreadsheet manually:
 To create an event hackpad manually:
 * `node js/hackpad.js EVENT_NUMBER EVENT_NAME EVENT_START_TIME EVENT_END_TIME`
 
+To create an event hackfoldr manually:
+* `node js/hackfoldr.js EVENT_NUMBER EVENT_NAME EVENT_START_TIME EVENT_SIGNUP_TIME [SPREADSHEET_LINK]`
+
+To create an event typeform manually:
+* `node js/typeform.js EVENT_NAME`
+
+You can customize `tmpl/typeform.js` to add more professions and achievements.
 
 ## Contributors
 
 * ipa (https://github.com/ipaaa) & ttcat (https://github.com/ttcat) for feature planning.
 * hlb (https://github.com/hlb) for project structure.
 * Lee (https://github.com/jessy1092) for hackpad integration.
-* cassi (https://github.com/caasi) for hackfolder integration.
+* caasi (https://github.com/caasi) for hackfolder and typeform integrations.
 * Jim (https://github.com/lemonlatte) for google spreadsheet creation
