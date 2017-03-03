@@ -7,7 +7,8 @@ module.exports = {
   },
   HACKPAD: {
     client_id: '',
-    secret: ''
+    secret: '',
+    template: ''
   },
   GAPI: {
     "secret_path": "./client_secret.json",

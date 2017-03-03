@@ -12,7 +12,7 @@ var padEndDayTime    = process.argv[6];
 var padEndHourTime   = process.argv[7];
 
 // get template
-client.export('2ucl5ftrzot', 'latest', 'html', function(err, resp) {
+client.export(config.HACKPAD.template, 'latest', 'html', function(err, resp) {
 
   var $ = cheerio.load(resp, {decodeEntities: false});
 
