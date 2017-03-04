@@ -34,7 +34,7 @@ Run `node js/input.js` to create event in CUI.
 #### Run part of function
 
 You can fork and create event manually now:
-*  `casperjs --ignore-ssl-errors=yes --ssl-protocol=tlsv1 --slug="EVENT_SLUG" --name="EVENT_NAME" --start_at="2016/06/24 09:00" --end_at="2016/06/24 18:00" js/kktix.js`
+*  `casperjs --ignore-ssl-errors=yes --ssl-protocol=tlsv1 --slug="EVENT_SLUG" --name="EVENT_NAME" --start_at="2016/06/24 09:00" --end_at="2016/06/24 18:00" --signup_at="06/10" js/kktix.js`
 
 To create an event spreadsheet manually:
 * `node js/spreadsheet.js EVENT_NUMBER EVENT_NAME`
