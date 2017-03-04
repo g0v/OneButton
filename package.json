@@ -4,7 +4,9 @@
   "description": "OneButton is a one-click solution for ipa to finish all hackathon duties at once.",
   "main": "js/input.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack-dev-server",
+    "start": "npm run start:server | npm run start:dev",
+    "start:server": "babel-node js/index.js",
+    "start:dev": "cross-env NODE_ENV=development webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,8 +20,10 @@
   },
   "homepage": "https://github.com/g0v/OneButton#readme",
   "dependencies": {
+    "babel-cli": "^6.23.0",
     "casperjs": "^1.1.1",
     "cheerio": "^0.20.0",
+    "child-process-promise": "^2.2.0",
     "classnames": "^2.2.5",
     "es6-promise": "^3.2.1",
     "google-auth-library": "^0.9.8",
@@ -28,6 +32,8 @@
     "http-client": "^4.1.0",
     "inquirer": "^1.0.3",
     "isomorphic-fetch": "^2.2.1",
+    "koa": "^2.0.1",
+    "koa-router": "next",
     "moment-natural": "^0.0.2",
     "phantomjs": "^2.1.1",
     "ramda": "^0.21.0",

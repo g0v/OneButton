@@ -30,7 +30,7 @@ class App extends Component {
                   <input type="text" className="form-control" defaultValue="" required />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="date">文案</label>
+                  <label htmlFor="date">大松名稱</label>
                   <input type="text" className="form-control" defaultValue="" required />
                 </div>
 
@@ -48,6 +48,14 @@ class App extends Component {
                 </div>
                 <div className="form-group">
                   <label htmlFor="date">結束時間</label>
+                  <input type="time" className="form-control" defaultValue="18:00" required />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="date">註冊日期</label>
+                  <input type="time" className="form-control" required />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="date">註冊時間</label>
                   <input type="time" className="form-control" defaultValue="18:00" required />
                 </div>
                 <button

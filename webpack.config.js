@@ -7,7 +7,7 @@ var syntax = require('postcss-scss');
 var contentBase = path.join(__dirname);
 var publicPath = '/';
 var modulesPath = path.join(__dirname, 'node_modules');
-var sourcePath = path.join(__dirname, 'client');
+var clientPath = path.join(__dirname, 'client');
 var targetPath = path.join(__dirname);
 
 module.exports = {
@@ -16,7 +16,7 @@ module.exports = {
     'react-hot-loader/patch',
     'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server',
-    path.join(sourcePath, 'index.js')
+    path.join(clientPath, 'index.js')
   ],
   output: {
     path: targetPath,
