@@ -7,8 +7,13 @@ var exec = require('child_process').exec;
 
 /* next Saturday */
 var default_start_moment = moment.natural('09:00 next saturday');
+default_start_moment = default_start_moment.natural('+7d');
 var default_start_at = default_start_moment.format('YYYY/MM/DD HH:mm');
-var default_end_at = moment.natural('18:00 next saturday').format('YYYY/MM/DD HH:mm');
+
+var default_end_moment = moment.natural('18:00 next saturday');
+default_end_moment = default_end_moment.natural('+7d');
+var default_end_at = default_end_moment.format('YYYY/MM/DD HH:mm');
+
 /* 12 days before start date(? */
 var default_signup_at = default_start_moment.subtract(12, 'days').add(3, 'hours').format('MM/DD');
 
