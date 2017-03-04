@@ -41,11 +41,24 @@ casper.thenOpen('https://kktix.com/dashboard/organizations/' + config.KKTIX.orga
     'event[end_at]': casper.cli.get("end_at")
   }, true);
 
+  this.click('.breadcrumb li:nth-child(2)');
+
+  var end_date_str = casper.cli.get("end_at");
+  var end_date = end_date_str.split(' ');
+
+  this.fill('form#new-event', {
+    'tickets[][start_at]': casper.cli.get("signup_at") + ' 12:00',
+    'tickets[][end_at]': end_date[0] + ' 9:00'
+  }, true);
+  
+
   this.click('.breadcrumb li:nth-child(3)');
+  
 });
 
 casper.waitForSelector('button[type="submit"]', function() {
   document.querySelector('button[type="submit"]').click();
 });
+
 
 casper.run();
