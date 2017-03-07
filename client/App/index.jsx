@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react'
 import cx from 'classnames'
 
 import styles from './index.css'
+console.log(styles)
 
 
 
@@ -22,41 +23,41 @@ class App extends Component {
       <div id={id} className={classes}>
         <div className="container">
           <h1>一鍵開大松</h1>
-          <div className="row">
-            <div className="col-lg-6">
+          <div id={styles.panel}>
+            <div id={styles.panelLeft}>
               <form method="post">
                 <div className="form-group">
-                  <label htmlFor="date">第幾次</label>
-                  <input type="text" className="form-control" defaultValue="" required />
+                  <label htmlFor="times">第幾次</label>
+                  <input id="times" type="number" className="form-control" defaultValue="" required />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="date">大松名稱</label>
-                  <input type="text" className="form-control" defaultValue="" required />
+                  <label htmlFor="name">大松名稱</label>
+                  <input id="name" type="text" className="form-control" defaultValue="" required />
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="date">開始日期</label>
-                  <input type="date" className="form-control" required />
+                  <label htmlFor="begin-date">開始日期</label>
+                  <input id="begin-date" type="date" className="form-control" required />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="date">開始時間</label>
-                  <input type="time" className="form-control" defaultValue="09:00" required />
+                  <label htmlFor="begin-time">開始時間</label>
+                  <input id="begin-time" type="time" className="form-control" defaultValue="09:00" required />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="date">結束日期</label>
-                  <input type="time" className="form-control" required />
+                  <label htmlFor="end-date">結束日期</label>
+                  <input id="end-date" type="time" className="form-control" required />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="date">結束時間</label>
-                  <input type="time" className="form-control" defaultValue="18:00" required />
+                  <label htmlFor="end-time">結束時間</label>
+                  <input id="end-time" type="time" className="form-control" defaultValue="18:00" required />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="date">註冊日期</label>
-                  <input type="time" className="form-control" required />
+                  <label htmlFor="signup-date">註冊日期</label>
+                  <input id="signup-date" type="time" className="form-control" required />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="date">註冊時間</label>
-                  <input type="time" className="form-control" defaultValue="18:00" required />
+                  <label htmlFor="signup-time">註冊時間</label>
+                  <input id="signup-time" type="time" className="form-control" defaultValue="18:00" required />
                 </div>
                 <button
                   id="go"
@@ -70,8 +71,8 @@ class App extends Component {
                 </button>
               </form>
             </div>
-            <div className="col-lg-6">
-              <pre id="output">output...</pre>
+            <div id={styles.panelRight}>
+              <pre id={styles.output}>output...</pre>
             </div>
           </div>
         </div>

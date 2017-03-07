@@ -1,3 +1,4 @@
+import 'babel-polyfill'
 import Koa from 'koa'
 import Router from 'koa-router'
 import moment from 'moment-natural'
