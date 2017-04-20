@@ -7,7 +7,7 @@ OneButton is a one-click solution for ipa to finish all hackathon duties at once
 * `brew install phantomjs`
 * `npm install -g casperjs`
 * `npm i`
-* Update **config.js**
+* create **config.js** from **config_example.ja**
   * kktix's account, password
   * hackpad's id, secret (each hackpad subdomain has differnet hackpad id, secret)
   * bit.ly's access token
@@ -15,7 +15,8 @@ OneButton is a one-click solution for ipa to finish all hackathon duties at once
 #### Google OAuth
 
 In order to use google drive api, please follow the guide from
-[Google Drive APIs](https://developers.google.com/drive/v3/web/quickstart/nodejs#step_1_turn_on_the_api_name) to turn on google drive api and generate a client secret. Once a secret is downloaded, you need to update the path of your GAPI secret and where a token is to stored in config.js. After that, you have generate a token using:
+[Google Drive APIs](https://developers.google.com/drive/v3/web/quickstart/nodejs#step_1_turn_on_the_api_name) to turn on google drive api (OAuth 2.0 client ID, application type: other) and generate a client secret. Once a secret is downloaded, you need to update the path of your GAPI secret and where a token is to stored in config.js. After that, you have generate a token using:
+
 
 ```
 $ node js/gapi-gen-token.js
