@@ -91,7 +91,7 @@ cell:B18:t:非資訊人提案小訣竅
 cell:C18:t:{"target"\c"_blank"}
 cell:D18:vtc:::
 cell:F18:t:done
-cell:A20:t:https\c//docs.google.com/presentation/d/1ydGacj8XwC7sJ8sx3yF6VOBWP66YpveXU-QTL23N0H0/pub?start=false&loop=false&delayms=3000&slide=id.p
+cell:A20:t:https\c//docs.google.com/presentation/d/1HrSP47Y-Vla-ybDt13t3wvrPTTpmRkw6NLE4TN2-LNU/edit?usp=sharing
 cell:B20:t:g0v新手教學投影片
 cell:C20:vtc:::
 cell:D20:vtc:::
