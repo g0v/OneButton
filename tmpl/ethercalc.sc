@@ -22,7 +22,7 @@ cell:A2:vtc:::
 cell:B2:t:g0v${name}共筆
 cell:C2:vtc:::
 cell:D2:vtc:::
-cell:A4:t:https\c//g0v.hackpad.com/${padID}
+cell:A4:t:https\c//g0v.hackpad.tw/${padID}
 cell:B4:t:${begin_at} 活動資訊
 cell:C4:vtc:::
 cell:D4:t:行前準備\cimportant
@@ -41,7 +41,7 @@ cell:A7:vt:tl:http\c//join.g0v.today
 cell:B7:t:slack聊天室
 cell:D7:t:pink 同步 irc
 cell:E7:t:pink red green blue
-cell:A8:t:https\c//g0v.hackpad.com/2mprMIpYMz9
+cell:A8:t:https\c//g0v.hackpad.tw/2mprMIpYMz9
 cell:B8:t:與會守則 COC
 cell:C8:vtc:::
 cell:D8:t:行前請讀
@@ -58,7 +58,7 @@ cell:A11:vt:tl:${spreadsheet_link}
 cell:B11:t:要提案！看提案！
 cell:C11:vtc:::
 cell:D11:t:提案在這登記\cwarning
-cell:A12:t: https\c//g0v.hackpad.com/g0v--JWIizPuN3mz
+cell:A12:t: https\c//g0v.hackpad.tw/g0v--JWIizPuN3mz
 cell:B12:t:g0v提案流程參考
 cell:C12:vtc:::
 cell:D12:vtc:::
@@ -76,7 +76,7 @@ cell:A15:vtc:::
 cell:B15:t:黑客松初心者
 cell:C15:t:{"expand"\ctrue}
 cell:D15:vtc:::
-cell:A16:t: https\c//g0v.hackpad.com/FAQ-gLNXqwv6krA
+cell:A16:t: https\c//g0v.hackpad.tw/FAQ-gLNXqwv6krA
 cell:B16:t:黑客松FAQ
 cell:C16:vtc:::
 cell:D16:vtc:::
@@ -104,22 +104,22 @@ cell:A22:vtc:::
 cell:B22:t:空白模版
 cell:C22:t:{"expand"\cfalse}
 cell:D22:vtc:::
-cell:A23:t: https\c//g0v.hackpad.com/Project-Readme-aCZGg48I5pX
+cell:A23:t: https\c//g0v.hackpad.tw/Project-Readme-aCZGg48I5pX
 cell:B23:t:專案介紹空白模版
 cell:C23:vtc:::
 cell:D23:t:常用\cimportant
 cell:F23:t:done
-cell:A24:t: https\c//g0v.hackpad.com/Product-Planning-T2d2kAradat
+cell:A24:t: https\c//g0v.hackpad.tw/Product-Planning-T2d2kAradat
 cell:B24:t:產品規劃空白模版
 cell:C24:vtc:::
 cell:D24:vtc:::
 cell:F24:t:done
-cell:A25:t: https\c//g0v.hackpad.com/User-Story-Socialtext-Style-mvxkbtlXlDf
+cell:A25:t: https\c//g0v.hackpad.tw/User-Story-Socialtext-Style-mvxkbtlXlDf
 cell:B25:t:user story 空白模版
 cell:C25:vtc:::
 cell:D25:vtc:::
 cell:F25:t:done
-cell:A26:t: https\c//g0v.hackpad.com/dwimzocKjEL
+cell:A26:t: https\c//g0v.hackpad.tw/dwimzocKjEL
 cell:B26:t:免責聲明模版
 cell:C26:vtc:::
 cell:D26:vtc:::
@@ -150,7 +150,7 @@ cell:A32:vtc:::
 cell:B32:t:專案 hackpad 請加到這裡
 cell:C32:t:{"expand"\ctrue}
 cell:D32:t:較完整專案\cimportant
-cell:A33:t:https\c//g0v.hackpad.com/COSCUP-2015--WxxpYVpXOWA
+cell:A33:t:https\c//g0v.hackpad.tw/COSCUP-2015--WxxpYVpXOWA
 cell:B33:t:COSCUP野生官網（範例）
 cell:C33:vtc:::
 cell:D33:vtc:::

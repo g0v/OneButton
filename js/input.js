@@ -5,6 +5,8 @@ var hackfoldr = require('./hackfoldr');
 var typeform = require('./typeform');
 var exec = require('child_process').exec;
 
+config.HACKPAD.site = config.HACKPAD.site || 'g0v.hackpad.tw';
+
 /* next Saturday */
 var default_start_moment = moment.natural('09:00 next saturday');
 default_start_moment = default_start_moment.natural('+7d');
@@ -107,7 +109,7 @@ inquirer.prompt(questions).then(function (answers) {
 
   exec(cmd, function(err, stdout, stderr) {
     var padID = stdout.split('\n').slice(-2)[0];
-    console.log('建完 hackpad 啦... https://g0v.hackpad.com/' + padID);
+    console.log('建完 hackpad 啦... https://' + config.HACKPAD.site + '/' + padID);
     console.log('--------');
 
     console.log('建立 Google Spreadsheet...');

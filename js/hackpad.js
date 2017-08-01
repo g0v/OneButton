@@ -2,7 +2,11 @@ var config = require('../config');
 var Hackpad = require('hackpad');
 var cheerio = require('cheerio');
 
-var client = new Hackpad(config.HACKPAD.client_id, config.HACKPAD.secret, { 'site': 'g0v' });
+var client = new Hackpad(
+  config.HACKPAD.client_id,
+  config.HACKPAD.secret,
+  { 'site': config.HACKPAD.site || 'g0v.hackpad.tw' }
+);
 
 var padNum           = process.argv[2];
 var padName          = process.argv[3];

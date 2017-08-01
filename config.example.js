@@ -6,6 +6,7 @@ module.exports = {
     template: ''
   },
   HACKPAD: {
+    site: 'g0v.hackpad.tw',
     client_id: '',
     secret: '',
     template: ''

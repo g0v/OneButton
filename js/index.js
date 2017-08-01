@@ -37,6 +37,8 @@ const dummy = {
 var app = new Koa()
 var router = new Router()
 
+config.HACKPAD.site = config.HACKPAD.site || 'g0v.hackpad.tw'
+
 router
   .get('/', (ctx) => {
     ctx.status = 204
@@ -69,7 +71,7 @@ router
     const padID = stdout.split('\n').slice(-2)[0]
 
     ctx.status = 201
-    ctx.body = { url: `https://g0v.hackpad.com/${padID}` }
+    ctx.body = { url: `https://${config.HACKPAD.site}/${padID}` }
   })
   .post('/spreadsheet', async (ctx) => {
     const times = ''
