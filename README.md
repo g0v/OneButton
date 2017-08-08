@@ -9,7 +9,7 @@ OneButton is a one-click solution for ipa to finish all hackathon duties at once
 * `npm i`
 * create **config.js** from **config_example.ja**
   * kktix's account, password
-  * hackpad's id, secret (each hackpad subdomain has differnet hackpad id, secret)
+  * hackpad's id, secret (each hackpad subdomain has different hackpad id, secret)
   * bit.ly's access token
 
 #### Google OAuth
