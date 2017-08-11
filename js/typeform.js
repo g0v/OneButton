@@ -29,6 +29,12 @@ var webhookSubmitUrl = config.TYPEFORM.webhook_submit_url;
  * "cloud", "thunderbolt", "pencil", "skull"
  */
 function run(name) {
+  var msg;
+  if (webhookSubmitUrl.indexOf('api') === -1) {
+    msg = 'You are probably using an old webhook url, place update your config.';
+    throw new Error(msg);
+  }
+
   var tmpl = template({ name: name });
   tmpl.webhook_submit_url = webhookSubmitUrl;
 

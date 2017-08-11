@@ -20,6 +20,6 @@ module.exports = {
   },
   TYPEFORM:{
     "api_key": "",
-    "webhook_submit_url": ""
+    "webhook_submit_url": "http://example.com/api/typeform"
   }
 };
