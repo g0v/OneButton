@@ -99,72 +99,75 @@ cell:F19:t:done
 cell:A20:t:https\c//middle2.com/
 cell:B20:t:公民開放伺服器 Middle2 中二
 cell:F20:t:done
-cell:A21:vtc:::
-cell:B21:vtc:::
-cell:C21:vtc:::
-cell:D21:vtc:::
+cell:A21:t:https\c//docs.google.com/document/d/1zBIhj7MX6jUWrNkDW15_XsLsUjihclgx0rmSLtww9F8/edit
+cell:B21:t:新手任務小紙條
+cell:F21:t:done
 cell:A22:vtc:::
-cell:B22:t:空白模版
-cell:C22:t:{"expand"\cfalse}
+cell:B22:vtc:::
+cell:C22:vtc:::
 cell:D22:vtc:::
-cell:A23:t: https\c//g0v.hackpad.tw/Project-Readme-aCZGg48I5pX
-cell:B23:t:專案介紹空白模版
-cell:C23:vtc:::
-cell:D23:t:常用\cimportant
-cell:F23:t:done
-cell:A24:t: https\c//g0v.hackpad.tw/Product-Planning-T2d2kAradat
-cell:B24:t:產品規劃空白模版
+cell:A23:vtc:::
+cell:B23:t:空白模版
+cell:C23:t:{"expand"\cfalse}
+cell:D23:vtc:::
+cell:A24:t: https\c//g0v.hackpad.tw/Project-Readme-aCZGg48I5pX
+cell:B24:t:專案介紹空白模版
 cell:C24:vtc:::
-cell:D24:vtc:::
+cell:D24:t:常用\cimportant
 cell:F24:t:done
-cell:A25:t: https\c//g0v.hackpad.tw/User-Story-Socialtext-Style-mvxkbtlXlDf
-cell:B25:t:user story 空白模版
+cell:A25:t: https\c//g0v.hackpad.tw/Product-Planning-T2d2kAradat
+cell:B25:t:產品規劃空白模版
 cell:C25:vtc:::
 cell:D25:vtc:::
 cell:F25:t:done
-cell:A26:t:https\c//g0v.github.io/grants-landing-template/
-cell:B26:t:產品入口頁空白模版
+cell:A26:t: https\c//g0v.hackpad.tw/User-Story-Socialtext-Style-mvxkbtlXlDf
+cell:B26:t:user story 空白模版
+cell:C26:vtc:::
+cell:D26:vtc:::
 cell:F26:t:done
-cell:A27:t: https\c//g0v.hackpad.tw/dwimzocKjEL
-cell:B27:t:免責聲明模版
-cell:C27:vtc:::
-cell:D27:vtc:::
+cell:A27:t:https\c//g0v.github.io/grants-landing-template/
+cell:B27:t:產品入口頁空白模版
 cell:F27:t:done
-cell:A28:vtc:::
-cell:B28:vtc:::
+cell:A28:t: https\c//g0v.hackpad.tw/dwimzocKjEL
+cell:B28:t:免責聲明模版
 cell:C28:vtc:::
 cell:D28:vtc:::
+cell:F28:t:done
 cell:A29:vtc:::
-cell:B29:t:資料
-cell:C29:t:{"expand"\cfalse}
+cell:B29:vtc:::
+cell:C29:vtc:::
 cell:D29:vtc:::
-cell:A30:vt:tl:http\c//data.gov.tw
-cell:B30:t:data.gov.tw
-cell:C30:vtc:::
+cell:A30:vtc:::
+cell:B30:t:資料
+cell:C30:t:{"expand"\cfalse}
 cell:D30:vtc:::
-cell:F30:t:done
-cell:A31:vt:tl:http\c//data.g0v.tw
-cell:B31:t:data.g0v.tw
+cell:A31:vt:tl:http\c//data.gov.tw
+cell:B31:t:data.gov.tw
 cell:C31:vtc:::
 cell:D31:vtc:::
 cell:F31:t:done
-cell:A32:vtc:::
-cell:B32:vtc:::
+cell:A32:vt:tl:http\c//data.g0v.tw
+cell:B32:t:data.g0v.tw
 cell:C32:vtc:::
 cell:D32:vtc:::
+cell:F32:t:done
 cell:A33:vtc:::
-cell:B33:t:專案 hackpad 請加到這裡
-cell:C33:t:{"expand"\ctrue}
-cell:D33:t:較完整專案\cimportant
-cell:A34:t:https\c//g0v.hackpad.tw/COSCUP-2015--WxxpYVpXOWA
-cell:B34:t:COSCUP野生官網（範例）
-cell:C34:vtc:::
-cell:D34:vtc:::
-cell:F34:t:done
+cell:B33:vtc:::
+cell:C33:vtc:::
+cell:D33:vtc:::
+cell:A34:vtc:::
+cell:B34:t:專案 hackpad 請加到這裡
+cell:C34:t:{"expand"\ctrue}
+cell:D34:t:較完整專案\cimportant
+cell:A35:t:https\c//g0v.hackpad.tw/COSCUP-2015--WxxpYVpXOWA
+cell:B35:t:COSCUP野生官網（範例）
+cell:C35:vtc:::
+cell:D35:vtc:::
+cell:F35:t:done
 col:A:w:238
 col:B:w:193
 col:C:w:171
-sheet:c:6:r:34:tvf:1
+sheet:c:6:r:35:tvf:1
 valueformat:1:text-wiki
 --SocialCalcSpreadsheetControlSave
 Content-type: text/plain; charset=UTF-8
