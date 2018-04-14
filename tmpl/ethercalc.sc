@@ -84,44 +84,56 @@ cell:F19:t:done
 cell:A20:t:https\c//middle2.com/
 cell:B20:t:公民開放伺服器 Middle2 中二
 cell:F20:t:done
-cell:A21:vtc:::
-cell:B21:t:空白模版
-cell:C21:t:{"expand"\cfalse}
+cell:A21:vt:tl:http\c//ipa.logdown.com/posts/166655-g0v-hackathon-nongeek
+cell:B21:t:非資訊人參與指南
+cell:C21:t:{"target"\c"_blank"}
 cell:D21:vtc:::
-cell:A22:t: https\c//g0v.hackpad.tw/Project-Readme-aCZGg48I5pX
-cell:B22:t:專案介紹空白模版
-cell:C22:vtc:::
-cell:D22:t:常用\cimportant
+cell:E21:vtc:::
+cell:F21:t:done
+cell:A22:vt:tl:http\c//ipa.logdown.com/posts/143277-g0v-proposal-tips
+cell:B22:t:非資訊人提案小訣竅
+cell:C22:t:{"target"\c"_blank"}
+cell:D22:vtc:::
+cell:E22:vtc:::
 cell:F22:t:done
-cell:A23:t:https\c//g0v.github.io/grants-landing-template/
-cell:B23:t:產品入口頁空白模版
-cell:F23:t:done
-cell:A24:t: https\c//g0v.hackpad.tw/dwimzocKjEL
-cell:B24:t:免責聲明模版
-cell:C24:vtc:::
-cell:D24:vtc:::
-cell:F24:t:done
 cell:A25:vtc:::
-cell:B25:vtc:::
-cell:C25:vtc:::
+cell:B25:t:空白模版
+cell:C25:t:{"expand"\cfalse}
 cell:D25:vtc:::
-cell:A26:vtc:::
-cell:B26:vtc:::
+cell:A26:t: https\c//g0v.hackpad.tw/Project-Readme-aCZGg48I5pX
+cell:B26:t:專案介紹空白模版
 cell:C26:vtc:::
-cell:D26:vtc:::
-cell:A27:vtc:::
-cell:B27:t:專案 hackpad 請加到這裡
-cell:C27:t:{"expand"\ctrue}
-cell:D27:t:較完整專案\cimportant
-cell:A28:t:https\c//g0v.hackpad.tw/COSCUP-2015--WxxpYVpXOWA
-cell:B28:t:COSCUP野生官網（範例）
+cell:D26:t:常用\cimportant
+cell:F26:t:done
+cell:A27:t:https\c//g0v.github.io/grants-landing-template/
+cell:B27:t:產品入口頁空白模版
+cell:F27:t:done
+cell:A28:t: https\c//g0v.hackpad.tw/dwimzocKjEL
+cell:B28:t:免責聲明模版
 cell:C28:vtc:::
 cell:D28:vtc:::
 cell:F28:t:done
+cell:A29:vtc:::
+cell:B29:vtc:::
+cell:C29:vtc:::
+cell:D29:vtc:::
+cell:A30:vtc:::
+cell:B30:vtc:::
+cell:C30:vtc:::
+cell:D30:vtc:::
+cell:A31:vtc:::
+cell:B31:t:專案 hackpad 請加到這裡
+cell:C31:t:{"expand"\ctrue}
+cell:D31:t:較完整專案\cimportant
+cell:A32:t:https\c//g0v.hackpad.tw/COSCUP-2015--WxxpYVpXOWA
+cell:B32:t:COSCUP野生官網（範例）
+cell:C32:vtc:::
+cell:D32:vtc:::
+cell:F32:t:done
 col:A:w:238
 col:B:w:193
 col:C:w:171
-sheet:c:6:r:28:tvf:1
+sheet:c:6:r:32:tvf:1
 valueformat:1:text-wiki
 --SocialCalcSpreadsheetControlSave
 Content-type: text/plain; charset=UTF-8
