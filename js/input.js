@@ -97,7 +97,7 @@ inquirer.prompt(questions).then(function (answers) {
   console.log('--------');
 
   console.log('建立 KKTIX 活動...');
-  var cmd = 'casperjs --ignore-ssl-errors=yes --ssl-protocol=tlsv1 --slug="' + slug + '" --name="' + answers.name + '" --start_at="' + answers.start_at + '" --end_at="' + answers.end_at + '" --signup_at="' + answers.signup_at + '" js/kktix.js';
+  var cmd = 'casperjs --slug="' + slug + '" --name="' + answers.name + '" --start_at="' + answers.start_at + '" --end_at="' + answers.end_at + '" --signup_at="' + answers.signup_at + '" js/kktix.js';
 
   exec(cmd, function(err, stdout, stderr) {
     console.log('建完活動啦... https://kktix.com/dashboard/events/' + slug);
