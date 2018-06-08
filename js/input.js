@@ -124,10 +124,10 @@ inquirer.prompt(questions).then(function (answers) {
         .then(function(sheetID) { console.log('建完 hackfoldr 啦... https://beta.hackfoldr.org' + sheetID) })
         .catch(console.error.bind(console));
 
-      console.log('建立會後問券...')
-      typeform(answers.name)
-        .then(function(result) { console.log('建完會後問券啦... ' + result.links[1].href + ', id: ' + result.id) })
-        .catch(console.error.bind(console));
+      //console.log('建立會後問券...')
+      //typeform(answers.name)
+      //  .then(function(result) { console.log('建完會後問券啦... ' + result.links[1].href + ', id: ' + result.id) })
+       // .catch(console.error.bind(console));
     });
   });
 });
