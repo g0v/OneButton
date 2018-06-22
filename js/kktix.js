@@ -7,6 +7,7 @@ if (debug) {
 } else {
   options = {};
 }
+options.waitTimeout = 20000;
 
 var config = require('../config');
 var casper = require('casper').create(options);
