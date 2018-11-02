@@ -30,7 +30,6 @@ module.exports = function (opts) {
   opts.achievements = opts.achievements || defaults.achievements;
 
   return {
-     {
     "title": opts.name + " 會後問券",
     "fields": [
       {
