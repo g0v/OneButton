@@ -49,7 +49,7 @@ router
     const start_at = ''
     const end_at = ''
     const slug = `g0v-hackath${times}n`
-    const cmd = `casperjs --ignore-ssl-errors=yes --ssl-protocol=tlsv1 --slug="${slug}" --name="${name}" --start_at="${start_at}" --end_at="${end_at}" js/kktix.js`
+    const cmd = `casperjs --ignore-ssl-errors=yes --ssl-protocol=tlsv2 --slug="${slug}" --name="${name}" --start_at="${start_at}" --end_at="${end_at}" js/kktix.js`
 
     console.log('建立 KKTIX 活動...')
     //await exec(cmd)
