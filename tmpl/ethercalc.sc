@@ -41,7 +41,7 @@ cell:A7:vt:tl:http\c//join.g0v.today
 cell:B7:t:slack聊天室
 cell:D7:t:pink 同步 irc
 cell:E7:t:pink red green blue
-cell:A8:t:https\c//g0v.hackpad.tw/2mprMIpYMz9
+cell:A8:t:https\c//g0v.hackmd.io/s/COC
 cell:B8:t:與會守則 COC
 cell:C8:vtc:::
 cell:D8:t:行前請讀
