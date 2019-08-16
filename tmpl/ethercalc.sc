@@ -73,6 +73,8 @@ cell:C14:t:{"expand"\ctrue}
 cell:D14:vtc:::
 cell:C15:vtc:::
 cell:D15:vtc:::
+cell:A17:t:https\c//docs.google.com/spreadsheets/d/1T6tf1Fvh-ZTKh5Clp_2PNO65UMHWsDB_slhbOgv7NeY/edit#gid=0
+cell:B17:t:大松 SOP_有事情，我幫忙！
 cell:A18:t:https\c//docs.google.com/presentation/d/1HrSP47Y-Vla-ybDt13t3wvrPTTpmRkw6NLE4TN2-LNU/edit?usp=sharing
 cell:B18:t:g0v新手教學投影片
 cell:C18:vtc:::
