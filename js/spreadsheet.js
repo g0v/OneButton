@@ -57,15 +57,7 @@ function copyFile(auth) {
         httpClient.parseJSON()
       )
 
-      var promoise = createShorten('/shorten?access_token=' + config.BITLY.access_token + '&longUrl=' + spreadsheet_url)
-        .then(function(resp){
-          var ret = resp.jsonData;
-          if (ret.status_code != 200) {
-              console.log(ret.status_txt);
-          } else {
-              console.log(ret.data.url);
-          }
-      });
+      console.log(spreadsheet_url);
     }
   });
 }
