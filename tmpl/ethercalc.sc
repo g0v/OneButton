@@ -37,7 +37,7 @@ cell:B6:t:IRC 聊天室 IRC channel
 cell:C6:vtc:::
 cell:D6:t:blue 即時聊天
 cell:F6:t:done
-cell:A7:vt:tl:http\c//join.g0v.today
+cell:A7:vt:tl:http\c//join.g0v.tw 
 cell:B7:t:slack 聊天室 Slack channel
 cell:D7:t:pink 同步 irc
 cell:E7:t:pink red green blue
@@ -80,7 +80,7 @@ cell:D15:vtc:::
 cell:C16:vtc:::
 cell:D16:vtc:::
 cell:A18:t:https\c//docs.google.com/spreadsheets/d/1T6tf1Fvh-ZTKh5Clp_2PNO65UMHWsDB_slhbOgv7NeY/edit#gid=0
-cell:B18:t:有事情，我幫忙！ Volunteer
+cell:B18:t:大松流程 SOP Hackathon Timeline
 cell:A19:t:https\c//docs.google.com/presentation/d/1HrSP47Y-Vla-ybDt13t3wvrPTTpmRkw6NLE4TN2-LNU/edit?usp=sharing
 cell:B19:t:g0v新手教學投影片 Newcomer Intro
 cell:C19:vtc:::
