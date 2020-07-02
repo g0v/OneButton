@@ -41,7 +41,7 @@ cell:A7:vt:tl:http\c//join.g0v.tw
 cell:B7:t:slack 聊天室 Slack channel
 cell:D7:t:pink 同步 irc
 cell:E7:t:pink red green blue
-cell:A8:t:https\c//g0v.hackmd.io/-g0v-Community-Hangout-${time}n
+cell:A8:t:https\c//g0v.hackmd.io/-g0v-Community-Hangout-${time}th
 cell:B8:t:松前哈拉 Pre-hackathon community hangout
 cell:C8:vtc:::
 cell:D8:t:green 來聊聊吧
