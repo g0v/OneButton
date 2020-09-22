@@ -52,7 +52,7 @@ function run(times, name, padID, begin_at, signup_at, spreadsheet_link) {
 
   var roomName = 'g0v-hackath' + times + 'n';
   var createRoom = createFetch(
-    base('https://ethercalc.org/_'),
+    base('https://ethercalc.net/_'),
     json({ room: roomName, snapshot: snapshot }),
     fixContentLength(),
     method('POST'),
@@ -72,7 +72,7 @@ if (runningAsScript) {
     process.exit(-1);
   }
   run(+argv[2], argv[3], argv[4].replace(/\+/g, ' '), argv[5].replace(/\+/g, ' '), argv[6], argv[7])
-    .then(console.log.bind('https://ethercalc.org' + console))
+    .then(console.log.bind('https://ethercalc.net' + console))
     .catch(console.error.bind(console));
 } else {
   module.exports = run;
